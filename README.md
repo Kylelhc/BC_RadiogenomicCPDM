@@ -1,4 +1,4 @@
-# BC_RadiogenomicCPDM
+# Conditional Probabilistic Diffusion Model Driven Synthetic Radiogenomic Applications in Breast Cancer
 xxxxx
 
 ```python
