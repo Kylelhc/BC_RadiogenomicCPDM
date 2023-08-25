@@ -1,4 +1,4 @@
-# **Conditional Probabilistic Diffusion Model Driven Synthetic Radiogenomic Applications in Breast Cancer**
+# Conditional Probabilistic Diffusion Model Driven Synthetic Radiogenomic Applications in Breast Cancer
 
 # Introduction
 
