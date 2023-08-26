@@ -75,9 +75,11 @@ python <VersioinName>.py <mode>
 - ```start```: the index of the first patient expected to generate images
 - ```end```: the index of the last patient expected to generate images
 
-# Applications
+# Some examples of applications
 
-## Data collection and preprocessing
+## Data collection
+- Generate MRI projections based on multi-omic data or gene expression
+- Collect labels of clinical attributes
 
 ## Extract features
 ```bash
@@ -87,7 +89,7 @@ python extract.py path1 path2 path3
 - ```path2```: path of the folder saving generated MRI projections. Eg. ```../../innerResLoss2```
 - ```path3```: path of the folder saving extracted features. Eg. ```../../0ri708er.pt```
 
-## Train XGBoost models
+## XGBoost models
 ```bash
 python xgboost.py path1 path2 path3 flag fmethod
 ```
@@ -95,21 +97,21 @@ python xgboost.py path1 path2 path3 flag fmethod
 - ```path2```: path of the folder saving generated MRI projections. Eg. ```../../innerResLoss2```
 - ```path3```: path of the folder saving extracted features. Eg. ```../../0ri708er.pt```
 - ```flag```: name of clinical features. Eg. ```er```, ```TP53```, ```Subtype```
-- ```fmethod```: method of extracting features from MRI projections, which can be. ```features_pyredio```, ```features_VGG16```, ```features_ResNet50```, ```features_InceptionV3```.
+- ```fmethod```: method of extracting features from MRI projections, which can be ```features_pyredio```, ```features_VGG16```, ```features_ResNet50```, ```features_InceptionV3```.
 
-
-
-
-## Survival analysis based on the multi-omic profile-guided synthetic MRI projections
-
-
-## Survival analysis for patients with ER+/HER2+ subtype data (multi-omic version)
-
-## Survival analysis for patients with ER+/HER2+ subtype data (gene expression version)
-
+## CoxPHfilter model
+```bash
+python cox.py path1 path2 path3 path4 fmethod
+```
+- ```path1```: path of the file saving clinical data, eg. ```../../TCGABRCA_HER2+ER+_subtypes.csv```
+- ```path2```: path of the file saving survival data, eg. ```../../TCGABRCA_survival.csv```
+- ```path3```: path of the folder saving generated MRI projections, eg. ```../../innerResLoss2```
+- ```path4```: path of the folder saving extracted features, eg. ```../../origin123Imgs95.pt```
+- ```fmethod```: method of extracting features from MRI projections, which can be ```features_pyredio```, ```features_VGG16```, ```features_ResNet50```, ```features_InceptionV3```.
 
 # Results
-
+- ```innerResLoss2.zip```: generated images according to multi-omic profiles
+- ```generatedImg_1.zip```: generated images according to gene expression
 
 
 
