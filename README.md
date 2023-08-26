@@ -77,6 +77,8 @@ python <VersioinName>.py <mode>
 
 # Applications
 
+## Data collection and preprocessing
+
 ## Predict TP53 mutation status
 
 ## Predict ER status
@@ -90,5 +92,12 @@ python <VersioinName>.py <mode>
 ## Survival analysis for patients with ER+/HER2+ subtype data (multi-omic version)
 
 ## Survival analysis for patients with ER+/HER2+ subtype data (gene expression version)
+
+
+# Results
+
+
+
+
 
 
