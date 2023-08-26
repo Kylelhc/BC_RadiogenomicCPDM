@@ -75,8 +75,20 @@ python <VersioinName>.py <mode>
 - ```start```: the index of the first patient expected to generate images
 - ```end```: the index of the last patient expected to generate images
 
+# Applications
 
+## Predict TP53 mutation status
 
+## Predict ER status
 
+## Survival analysis based on the multi-omic profile-guided synthetic MRI projections
+
+## Predict ER+/Her+2 subtype based on the multi-omic profile-guided synthetic MRI projections
+
+## Predict ER+/Her+2 subtype based on the gene expression-guided synthetic MRI projections
+
+## Survival analysis for patients with ER+/HER2+ subtype data (multi-omic version)
+
+## Survival analysis for patients with ER+/HER2+ subtype data (gene expression version)
 
 
