@@ -18,8 +18,19 @@ We proposed the utilization of a well-trained CPDM to address the unpaired data 
 
 The CPDM is trained with matched patient MRI projections and patient multi-omic data. We repeat the experiment on the gene expression dataset. All datasets are stored in the ```data``` directories. 
 
-- raw multi-omics data and gene expression data are obtained from the TCGA
+- Raw multi-omics data and gene expression data are obtained from the TCGA
 - MRIs obtained from the TCIA, where the digital image pixel values are extracted
+
+## Training
+### Multi-omic version
+```python
+python multiOmicVersion.py <mode>
+```
+### Gene expression version
+```python
+python geneExprVersion.py <mode>
+```
+
 
 
 
