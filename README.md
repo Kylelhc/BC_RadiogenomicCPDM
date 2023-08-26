@@ -110,8 +110,8 @@ python cox.py path1 path2 path3 path4 fmethod
 - ```fmethod```: method of extracting features from MRI projections, which can be ```features_pyredio```, ```features_VGG16```, ```features_ResNet50```, ```features_InceptionV3```.
 
 # Results
-- ```innerResLoss2.zip```: generated images according to multi-omic profiles
-- ```generatedImg_1.zip```: generated images according to gene expression
+- ```innerResLoss2.zip```: some generated images according to multi-omic profiles
+- ```generatedImg_1.zip```: some generated images according to gene expression
 
 
 
