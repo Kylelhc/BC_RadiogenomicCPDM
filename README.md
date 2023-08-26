@@ -11,7 +11,6 @@ We proposed the utilization of a well-trained CPDM to address the unpaired data 
 
 # CPDM
 ## Architecture
-
 ![Fig  1](https://github.com/Kylelhc/BC_RadiogenomicCPDM/assets/143105097/922c1fb2-32fb-4f89-91bd-b8e0d75356dc)
 
 ```python
