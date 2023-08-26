@@ -30,17 +30,17 @@ python <VersioinName>.py <mode>
 - ```<VersioinName>``` represents the CPDM trained on the different dataset, which can be ```multiOmicVersion``` and ```geneExprVersion```
 - if user only want to train a CPDM and save the model, please set ```<mode>``` to ```train```
 - Please set correct parameters in the , including:
-  - ```SideImgPath```: the directory store real MRI projections, i.e. ```../../SidePNG128```
-  - ```SideBTFpath```: the directory store patient ID, ```../../SideViewBTF.csv```. The corresponding patients have paired real MRI projections and genomic profiles.
-  - ```allBTFpath``` = '/content/drive/MyDrive/End2End/BTF_features.csv'
-  - ```geneExprPath``` = '/content/drive/MyDrive/geneExpr/kyle/TCGABRCA_15gxp.csv'
-  - ```timesteps``` = 1500
-  - ```loss_type``` = 'l2' # l1
-  - ```lr``` = 1e-4
-  - ```batch_size``` = 6  # 6
-  - ```epochs``` = 1100  # 1100
-  - ```checkpoint_path``` = '/content/drive/MyDrive/geneExpr/checkpoint/geneExprModel_1.pt' 
-  - ```use_checkpoint``` = False  # True for load
+  - ```SideImgPath```: the directory store real MRI projections, i.e. ```../../data/SidePNG128```
+  - ```SideBTFpath```: the directory store patient ID, i.e. ```../../data/SideViewBTF.csv```. The corresponding patients have paired real MRI projections and genomic profiles.
+  - ```allBTFpath```: the directory store multi-omic data, i.e. ```../../data/BTF_features.csv```
+  - ```geneExprPath```: the directory store gene expression data, i.e. ```../../data/TCGABRCA_15gxp.csv```
+  - ```timesteps```: 1500
+  - ```loss_type```: regularization methods, including ```l1```, ```l2```, and ```l1_l2```
+  - ```lr```: learning rate
+  - ```batch_size```: 6
+  - ```epochs```: 1100
+  - ```checkpoint_path```: path to save the model, i.e. ```../../checkpoint/geneExprModel_1.pt```
+  - ```use_checkpoint```: ```True``` for loading the saved checkpoint and ```False``` for restart training
 ## Testing
 
 To test a trained
