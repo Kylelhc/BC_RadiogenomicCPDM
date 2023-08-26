@@ -83,19 +83,25 @@ python <VersioinName>.py <mode>
 ```bash
 python extract.py path1 path2 path3
 ```
-- ```path1```: path of file saving clinical data, i.e. mutations status, ER status, ER+/HER2+ subtypes. Eg. ```../../CliniUnOpHer2.csv```
+- ```path1```: path of the file saving clinical data, i.e. mutations status, ER status, ER+/HER2+ subtypes. Eg. ```../../CliniUnOpHer2.csv```
 - ```path2```: path of the folder saving generated MRI projections. Eg. ```../../innerResLoss2```
 - ```path3```: path of the folder saving extracted features. Eg. ```../../0ri708er.pt```
 
-## Predict TP53 mutation status
+## Train XGBoost models
+```bash
+python xgboost.py path1 path2 path3 flag fmethod
+```
+- ```path1```: path of the file saving clinical data, i.e. mutations status, ER status, ER+/HER2+ subtypes. Eg. ```../../CliniUnOpHer2.csv```
+- ```path2```: path of the folder saving generated MRI projections. Eg. ```../../innerResLoss2```
+- ```path3```: path of the folder saving extracted features. Eg. ```../../0ri708er.pt```
+- ```flag```: name of clinical features. Eg. ```er```, ```TP53```, ```Subtype```
+- ```fmethod```: method of extracting features from MRI projections, which can be. ```features_pyredio```, ```features_VGG16```, ```features_ResNet50```, ```features_InceptionV3```.
 
-## Predict ER status
+
+
 
 ## Survival analysis based on the multi-omic profile-guided synthetic MRI projections
 
-## Predict ER+/Her+2 subtype based on the multi-omic profile-guided synthetic MRI projections
-
-## Predict ER+/Her+2 subtype based on the gene expression-guided synthetic MRI projections
 
 ## Survival analysis for patients with ER+/HER2+ subtype data (multi-omic version)
 
