@@ -22,14 +22,15 @@ The CPDM is trained with matched patient MRI projections and patient multi-omic 
 - MRIs obtained from the TCIA, where the digital image pixel values are extracted
 
 ## Training
-### Multi-omic version
+
 ```python
-python multiOmicVersion.py <mode>
+python <VersioinName>.py <mode>
 ```
-### Gene expression version
-```python
-python geneExprVersion.py <mode>
-```
+- ```<VersioinName>``` represents the CPDM trained on the different dataset, which can be ```multiOmicVersion``` and ```geneExprVersion```
+
+
+
+
 
 
 
