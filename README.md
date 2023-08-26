@@ -79,7 +79,7 @@ python <VersioinName>.py <mode>
 
 ## Data collection
 - Generate MRI projections based on multi-omic data or gene expression
-- Collect labels of clinical attributes
+- Collect labels of clinical attributes from TCIA
 
 ## Extract features
 ```bash
