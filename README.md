@@ -24,7 +24,7 @@ The CPDM is trained with matched patient MRI projections and patient multi-omic 
 ## Training
 
 To train a CPDM on the training set, using:
-```python
+```bash
 python <VersioinName>.py <mode>
 ```
 - ```<VersioinName>``` represents the CPDM trained on the different dataset, which can be ```multiOmicVersion``` and ```geneExprVersion```
@@ -41,10 +41,19 @@ python <VersioinName>.py <mode>
   - ```epochs```: 1100
   - ```checkpoint_path```: path to save the model, i.e. ```../../checkpoint/geneExprModel_1.pt```
   - ```use_checkpoint```: ```True``` for loading the saved checkpoint and ```False``` for restart training
-## Testing
 
-To test a trained
+## Testing and Evaluation
 
+To test a trained CPDM, using:
+```bash
+python <VersioinName>.py <mode>
+```
+- Set ```<mode>``` to ```test```
+- Refer to ```Training``` for parameter settings
+- ```generateSamples```: number of images expected to generate
+- ```gridW```: number of images on each row
+- ```gridH```: number of images on each column
+- ```figureSize```: size of generated images
 
 
 
