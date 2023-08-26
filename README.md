@@ -79,6 +79,14 @@ python <VersioinName>.py <mode>
 
 ## Data collection and preprocessing
 
+## Extract features
+```bash
+python extract.py path1 path2 path3
+```
+- ```path1```: path of file saving clinical data, i.e. mutations status, ER status, ER+/HER2+ subtypes. Eg. ```../../CliniUnOpHer2.csv```
+- ```path2```: path of the folder saving generated MRI projections. Eg. ```../../innerResLoss2```
+- ```path3```: path of the folder saving extracted features. Eg. ```../../0ri708er.pt```
+
 ## Predict TP53 mutation status
 
 ## Predict ER status
