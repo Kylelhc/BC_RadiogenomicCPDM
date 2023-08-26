@@ -23,11 +23,12 @@ The CPDM is trained with matched patient MRI projections and patient multi-omic 
 
 ## Training
 
+To train a CPDM on the training set, using:
 ```python
 python <VersioinName>.py <mode>
 ```
 - ```<VersioinName>``` represents the CPDM trained on the different dataset, which can be ```multiOmicVersion``` and ```geneExprVersion```
-
+- if user only want to train a CPDM and save the model, please set ```<mode>``` to train
 
 
 
