@@ -11,7 +11,18 @@ We proposed the utilization of a well-trained CPDM to address the unpaired data 
 
 # CPDM
 ## Architecture
+
 ![Fig  1](https://github.com/Kylelhc/BC_RadiogenomicCPDM/assets/143105097/922c1fb2-32fb-4f89-91bd-b8e0d75356dc)
+
+## Data
+
+The CPDM is trained with matched patient MRI projections and patient multi-omic data. We repeat the experiment on the gene expression dataset. All datasets are stored in the ```data``` directories. 
+
+- raw multi-omics data and gene expression data are obtained from the TCGA
+- MRIs obtained from the TCIA, where the digital image pixel values are extracted
+
+
+
 
 ```python
 python matchimage.py --csvfile <file> --imagedir <image_directory> --outputdir <output_directory>
