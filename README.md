@@ -31,9 +31,9 @@ python <VersioinName>.py <mode>
 - if user only want to train a CPDM and save the model, please set ```<mode>``` to ```train```
 - Please set correct parameters in the , including:
   - ```SideImgPath```: the directory store real MRI projections, i.e. ```../../data/SidePNG128```
-  - ```SideBTFpath```: the directory store patient ID, i.e. ```../../data/SideViewBTF.csv```. The corresponding patients have paired real MRI projections and genomic profiles.
-  - ```allBTFpath```: the directory store multi-omic data, i.e. ```../../data/BTF_features.csv```
-  - ```geneExprPath```: the directory store gene expression data, i.e. ```../../data/TCGABRCA_15gxp.csv```
+  - ```SideBTFpath```: the file store patient ID, i.e. ```../../data/SideViewBTF.csv```. The corresponding patients have paired real MRI projections and genomic profiles.
+  - ```allBTFpath```: the file store multi-omic data, i.e. ```../../data/BTF_features.csv```
+  - ```geneExprPath```: the file store gene expression data, i.e. ```../../data/TCGABRCA_15gxp.csv```
   - ```timesteps```: 1500
   - ```loss_type```: regularization methods, including ```l1```, ```l2```, and ```l1_l2```
   - ```lr```: learning rate
@@ -44,7 +44,7 @@ python <VersioinName>.py <mode>
 
 ## Testing and Evaluation
 
-To test a trained CPDM, using:
+### Test and evaluate the trained CPDM on the test set
 ```bash
 python <VersioinName>.py <mode>
 ```
@@ -55,14 +55,28 @@ python <VersioinName>.py <mode>
 - ```gridH```: number of images on each column
 - ```figureSize```: size of generated images
 
-
-
-
-
-```python
-python matchimage.py --csvfile <file> --imagedir <image_directory> --outputdir <output_directory>
-```
+### Generate images for some patients with unpaired data (patients only have genomic data)
 ```bash
-sssss
+python <VersioinName>.py <mode>
 ```
+- Set ```<mode>``` to ```unpaired```
+- Refer to ```Training``` and ```Test and evaluate the trained CPDM on the test set``` for parameter settings
+- ```btfpath```: the file store all genomic data
+- ```testIds```: a list of valid patient IDs
+
+### Generate images for all patients with genomic data
+```bash
+python <VersioinName>.py <mode>
+```
+- Set ```<mode>``` to ```generate```
+- Refer to ```Training``` and ```Test and evaluate the trained CPDM on the test set``` for parameter settings
+- ```btfpath```: the file store all genomic data, i.e. ```../../allGeneExprs.csv```
+- ```savePath```: the directory to save generated images, i.e. ```../../generatedImg_1```
+- ```start```: the index of the first patient expected to generate images
+- ```end```: the index of the last patient expected to generate images
+
+
+
+
+
 
